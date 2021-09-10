@@ -1,0 +1,8 @@
+.container {
+  background-color: greenyellow;
+  width: 90%;
+}
+
+.header{
+  font-size: clamp(1rem, 2rem, 3rem);
+}
