@@ -1,14 +1,18 @@
 .card{
-  min-width: 15%;
+  width: 10rem;
   height: 15rem;
   padding: .8rem;
   font-size: 1rem;
-  margin: 1rem;
-  background-color: aquamarine;
+  margin: .5rem;
+  background-color: rgba(226, 236, 233, 0.438);
   border: 1px solid black;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
+}
+
+.cardLink{
+  text-decoration: none;
 }
 
 .cardTitulo{

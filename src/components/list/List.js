@@ -15,14 +15,12 @@ export const List = () => {
      setTarefas(response.data);
 
    })
-   
-    console.log("List",tarefas)
   }
 
   return (
     <div className='listContainer'>
         {tarefas.map((tarefa) => (
-          <Card key={tarefa._id} tarefas={tarefa} />
+          <Card key={tarefa._id} tarefas={tarefa}/>
         ))}
     </div>
   )

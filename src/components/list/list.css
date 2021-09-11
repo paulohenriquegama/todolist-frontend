@@ -1,7 +1,7 @@
 .listContainer {
   width: 100%;
-  height: 100vh;
-  background-color: greenyellow;
+  min-height: 100vh;
+  /* background-color: greenyellow; */
   display:flex;
   flex-wrap: wrap;
   justify-content: center;
