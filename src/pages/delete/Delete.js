@@ -22,7 +22,7 @@ const Delete = (props) => {
   return (
     <div>
       <Link to={`/tarefas/${id}`}>
-        <button onClick={handleModal}>Excluir</button>
+        <button onClick={handleModal} className="btn-padrao">Excluir</button>
       </Link>     
       {modalDelete 
       ?
@@ -36,10 +36,10 @@ const Delete = (props) => {
             <p>Deseja realmente excluir a tarefa?</p>
           </div>
           <div>
-            <button className="btn-escolha" onClick={deleteTarefaById}>
+            <button className="btn-padrao" onClick={deleteTarefaById}>
               Sim
             </button>
-            <button className="btn-escolha" onClick={handleModal}>
+            <button className="btn-padrao" onClick={handleModal}>
               Não
             </button>
           </div>

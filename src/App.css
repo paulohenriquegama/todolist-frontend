@@ -1,9 +1,8 @@
 .App {
   text-align: center;
   /* background-image: url('https://setting.com.br/wp-content/uploads/2020/08/aplicativo-gestao-tarefas.jpg'); */
-  background: #43C6AC;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #191654, #43C6AC);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: -webkit-linear-gradient(to right, #191654, #43C6AC);
+  background: linear-gradient(to right, #191654, #43C6AC);
 
   background-color: transparent;
   background-repeat: no-repeat;
@@ -17,3 +16,13 @@ background: linear-gradient(to right, #191654, #43C6AC); /* W3C, IE 10+/ Edge, F
   justify-items: center;
 }
 
+.btn-padrao{
+  padding: .5rem 1rem;
+  margin: .5rem ;
+  cursor: pointer;
+  border-radius: .4rem;
+  background: -webkit-linear-gradient(to right, #3630acd7, #43C6AC);
+  background: linear-gradient(to right, #3630acd7, #43C6AC);
+  font-weight: bold;
+  border:none;
+}
