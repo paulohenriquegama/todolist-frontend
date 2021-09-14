@@ -10,7 +10,7 @@ function Routes() {
     <div className='routes'>
       <Switch>
         <Route path="/" exact component={Home}/>
-        <Route path="/tarefas/:id" exact component={View}/>
+        <Route path="/tarefas/:id" component={View}/>
         <Route path="/create" component={Create}/>
       </Switch>
     </div>
