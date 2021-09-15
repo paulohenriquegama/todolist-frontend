@@ -68,14 +68,15 @@ const Edit = (props) => {
             </div>
             <div className="formItems">
               <label>Status</label>
-              <select name="status" className="field" 
+              <select name="status" className="field"
+              type="text" 
               value={tarefa.status}
               onChange={handleChange}
               required>
-                <option ></option>
-                <option value='fazer'>Fazer</option>
-                <option value='fazendo'>Fazendo</option>
-                <option value='feito'>Feito</option>
+                <option >Selecione o status</option>
+                <option value='Fazer'>Fazer</option>
+                <option value='Fazendo'>Fazendo</option>
+                <option value='Feito'>Feito</option>
               </select>
             </div>
             <div className="formItems">
