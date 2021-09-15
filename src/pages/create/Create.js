@@ -6,11 +6,13 @@ import Api from '../../api/api'
 import { toast } from "react-toastify";
 
 
+
 const Create = () => {
-  const onSubmit = async (values, actions) => {
-    console.log(values.prazo)
+
+  const onSubmit = async (values, { resetForm }) => {
     await Api.post('/add', values).then(tarefa => {
       toast.success("Sucesso!");
+      resetForm();
     }).catch(() => {toast.error("Erro!");})
   }
 
@@ -41,6 +43,7 @@ const Create = () => {
         validate={validate}
         onSubmit={onSubmit}
         validateOnMount
+        // onReset={onSubmit}
         initialValues={{
           titulo: '',
           desc: '',
