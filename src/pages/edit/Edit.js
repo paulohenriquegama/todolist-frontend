@@ -17,8 +17,8 @@ const Edit = (props) => {
   },[])
   
 
-  const getTarefaById = () => {
-    Api.get(`tarefas/${id}`).then((response) => {
+  const getTarefaById = async () => {
+    await Api.get(`tarefas/${id}`).then((response) => {
       setTarefa(response.data);
     })
   }

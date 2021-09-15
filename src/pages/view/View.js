@@ -17,8 +17,8 @@ const View = (props) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   },[])
 
-  const getTarefaById = () => {
-    Api.get(`tarefas/${id}`).then((response) => {
+  const getTarefaById = async () => {
+    await Api.get(`tarefas/${id}`).then((response) => {
       setTarefa(response.data);
     })
   }
