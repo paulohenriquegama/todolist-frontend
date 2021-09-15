@@ -10,13 +10,13 @@ export const List = () => {
     getTarefas();   
   },[])
   
-  const getTarefas = () => {
-   Api.get("tarefas").then((response) => {
+  const getTarefas = async () => {
+  await Api.get("tarefas").then((response) => {
      setTarefas(response.data);
 
-   })
+   }).catch((error) => console.error(error))
   }
-
+  console.log('Tarefa=',tarefas)
   return (
     <div className='listContainer'>
         {tarefas.map((tarefa) => (
