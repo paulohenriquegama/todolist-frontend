@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Api from '../../api/api'
 import { toast } from "react-toastify";
-import { format } from 'date-fns'
+import { format, addDays } from 'date-fns'
 import './edit.css'
 import { useHistory } from 'react-router-dom';
 
@@ -81,7 +81,7 @@ const Edit = (props) => {
             </div>
             <div className="formItems">
               <label>Prazo</label>
-              <input name="prazo" type="date" className="field" value={ tarefa.prazo ?  format(new Date(tarefa.prazo), 'yyyy-MM-dd') : "" }
+              <input name="prazo" type="date" className="field" value={ tarefa.prazo ?  format(addDays(new Date(tarefa.prazo),1), 'yyyy-MM-dd') : "" }
               onChange={handleChange}
               required/>
             </div>
